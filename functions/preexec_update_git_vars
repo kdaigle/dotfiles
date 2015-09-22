@@ -14,4 +14,7 @@ case "$1" in
     nb*)
     __EXECUTED_GIT_COMMAND=1
     ;;
+    grhh*)
+    __EXECUTED_GIT_COMMAND=1
+    ;;
 esac
