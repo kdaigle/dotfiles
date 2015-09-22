@@ -16,3 +16,7 @@
 	safe = !mkdir -p .git/safe && echo "Repository marked safe!"
 [pull]
 	rebase = true
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
