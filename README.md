@@ -19,4 +19,4 @@ There's a few special files in the hierarchy.
 
 ## Thanks
 
-I borrowed the scripts from @holman's excellent [dotfile](https://github.com/holman/dotfiles).
+I borrowed the scripts from @holman's excellent [dotfiles](https://github.com/holman/dotfiles).
