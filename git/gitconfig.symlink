@@ -12,3 +12,5 @@
 	ui = true
 [help]
   autocorrect = 1
+[alias]
+	safe = !mkdir -p .git/safe && echo "Repository marked safe!"
