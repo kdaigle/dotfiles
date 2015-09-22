@@ -1,0 +1,3 @@
+syntax on
+colorscheme vendetta
+au FileType gitcommit setlocal tw=72
