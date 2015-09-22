@@ -1,0 +1,5 @@
+[user]
+	name = Kyle Daigle
+	email = kyle.daigle@github.com
+[credential]
+	helper = osxkeychain
