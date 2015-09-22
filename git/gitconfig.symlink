@@ -5,3 +5,10 @@
 	helper = osxkeychain
 [push]
 	default = upstream
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[help]
+  autocorrect = 1
