@@ -3,3 +3,5 @@
 	email = kyle.daigle@github.com
 [credential]
 	helper = osxkeychain
+[push]
+	default = upstream
