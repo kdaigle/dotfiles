@@ -4,7 +4,7 @@
 [credential]
 	helper = osxkeychain
 [push]
-	default = upstream
+	default = current
 [color]
 	diff = auto
 	status = auto
