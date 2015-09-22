@@ -17,4 +17,7 @@ case "$1" in
     grhh*)
     __EXECUTED_GIT_COMMAND=1
     ;;
+    gco*)
+    __EXECUTED_GIT_COMMAND=1
+    ;;
 esac
