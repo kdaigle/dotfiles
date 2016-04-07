@@ -6,3 +6,5 @@
   core: {}
   editor:
     invisibles: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
