@@ -3,7 +3,7 @@
 ####
 alias ga="git add"
 alias grhh="git reset --hard HEAD"
-alias gh="git rev-parse --abbrev-ref HEAD"
+alias ghead="git rev-parse --abbrev-ref HEAD"
 alias gp="git add -p"
 alias gpu="git pull"
 alias gpp="git pull && git push"
