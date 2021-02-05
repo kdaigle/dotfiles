@@ -48,21 +48,4 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
-# Load the theme for iTerm
-defaults read com.googlecode.iterm2 "Custom Color Presets" | grep -q "argonaut"
-if [ $? -eq 1 ]; then
-  open "${HOME}/.dotfiles/iterm2/argonaut.itermcolors"
-fi
-echo "> Set your iTerm2 custom folder to '${HOME}/.dotfiles/iterm2/settings'."
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-# for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-# 	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
-# 	"Opera" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
-# 	"Transmission" "Twitter" "iCal"; do
-# 	killall "${app}" > /dev/null 2>&1
-# done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
