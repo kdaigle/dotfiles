@@ -1,0 +1,7 @@
+[user]
+	name = Kyle Daigle
+	email = kdaigle@github.com
+[include]
+	path = /Users/kdaigle/.gitconfig.local
+[dotfiles]
+	managed = true
