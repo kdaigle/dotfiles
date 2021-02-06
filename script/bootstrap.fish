@@ -28,7 +28,6 @@ function on_exit -p %self
 end
 
 function setup_gitconfig
-	touch $HOME/.gitconfig
 	set managed (git config --global --get dotfiles.managed)
 	# if there is no user.email, we'll assume it's a new machine/setup and ask it
 	if test -z (git config --global --get user.email)
