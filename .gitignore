@@ -1,6 +1,3 @@
 .DS_Store
-atom.symlink/compile-cache
-atom.symlink/storage
-atom.symlink/.apm
-atom.symlink/.node-gyp
-atom.symlink/.storage
+.gitconfig.local
+Brewfile.lock.json

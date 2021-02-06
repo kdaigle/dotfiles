@@ -1,26 +1,7 @@
 [user]
 	name = Kyle Daigle
-	email = kyle.daigle@github.com
-[credential]
-	helper = osxkeychain
-[push]
-	default = current
-[color]
-	diff = auto
-	status = auto
-	branch = auto
-	ui = true
-[help]
-  autocorrect = 1
-[alias]
-	safe = !mkdir -p .git/safe && echo "Repository marked safe!"
-[pull]
-	rebase = true
-[url "git@github.com:"]
-  insteadOf = "gh:"
-  pushInsteadOf = "github:"
-  pushInsteadOf = "git://github.com/"
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	email = kdaigle@github.com
+[include]
+	path = /Users/kdaigle/.gitconfig.local
+[dotfiles]
+	managed = true
