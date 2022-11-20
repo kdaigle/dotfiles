@@ -13,10 +13,13 @@ There's a few special files in the hierarchy.
 
 ## Install
 
+First, install [Homebrew](https://brew.sh/).
+
 Run this:
 
 ```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
+brew install fish
+git clone https://github.com/kdaigle/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./script/bootstrap.fish
 ```
