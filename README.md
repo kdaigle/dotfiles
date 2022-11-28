@@ -19,6 +19,7 @@ Run this:
 
 ```sh
 brew install fish
+curl -sfL https://get.oh-my.fish | fish
 git clone https://github.com/kdaigle/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./script/bootstrap.fish
