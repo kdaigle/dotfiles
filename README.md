@@ -19,7 +19,9 @@ Run this:
 
 ```sh
 brew install fish
-curl -sfL https://get.oh-my.fish | fish
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/bin/fish
+# Restart your terminal
 git clone https://github.com/kdaigle/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./script/bootstrap.fish
