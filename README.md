@@ -22,6 +22,7 @@ brew install fish
 echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
 # Restart your terminal
+curl -sfL https://get.oh-my.fish | fish
 git clone https://github.com/kdaigle/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./script/bootstrap.fish
