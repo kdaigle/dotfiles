@@ -1,5 +1,9 @@
-[credential]
-	helper = osxkeychain
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [push]
 	default = current
 [color]
@@ -19,5 +23,6 @@
   pushInsteadOf = "git://github.com/"
 [filter "lfs"]
 	required = true
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

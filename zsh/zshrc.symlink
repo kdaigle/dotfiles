@@ -1,0 +1,46 @@
+# Path
+export PATH="/opt/homebrew/bin:$PATH"
+
+# Set up init for rbenv
+if command -v rbenv &> /dev/null; then
+  eval "$(rbenv init - zsh)"
+fi
+
+# Enable autosuggestions and completions
+autoload -Uz compinit && compinit
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_dups
+
+# Key bindings - tab accepts autosuggestion if using zsh-autosuggestions
+bindkey '\t' complete-word
+
+# Git aliases
+alias ga='git add'
+alias grhh='git reset --hard HEAD'
+alias ghead='git rev-parse --abbrev-ref HEAD'
+alias gp='git add -p'
+alias gpu='git pull'
+alias gpp='git pull && git push'
+alias gco='git checkout'
+alias gcm='git commit'
+alias gs='git status'
+alias gd='git diff'
+alias nb='git stash && git checkout main && git pull && git checkout -b'
+alias db='git checkout main && git branch -D'
+alias gmm='git fetch origin main; git merge main --no-edit'
+alias g='git status -s -b'
+
+# GitHub/Rails aliases
+alias gg="cd ~/github/github"
+alias sc="script/console"
+alias ss="script/server"
+
+# System aliases
+alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy && echo '=> Public key copied to pasteboard.'"
+alias e="code-insiders ."

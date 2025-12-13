@@ -1,2 +1,2 @@
 brew "rbenv"
-brew "yarn"
+brew "pnpm"
